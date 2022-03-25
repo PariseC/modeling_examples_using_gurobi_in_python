@@ -14,7 +14,7 @@ def readXlsxFile(filename):
     N = [depot]
     C = []
     Q = {}
-    for i in range(df_node.shape[0]):
+    for i in range(1,df_node.shape[0]):
         id=df_node['id'][i]
         demand=df_node['demand'][i]
         N.append(id)
